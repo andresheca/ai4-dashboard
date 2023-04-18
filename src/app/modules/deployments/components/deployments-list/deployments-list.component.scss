@@ -1,5 +1,5 @@
 .mat-mdc-header-row {
-    background: var(--accent);
+    background: var(--primary);
 
     .mat-mdc-header-cell {
         border: 1px solid var(--black-60);
@@ -58,6 +58,9 @@
 }
 
 .mat-mdc-table .mat-mdc-row:hover {
-    background-color: var(--primary);
+    background-color: var(--accent);
     cursor: pointer;
+}
+.mat-mdc-table .mat-mdc-row:hover  #accessIcon{
+    color: var(--white);
 }

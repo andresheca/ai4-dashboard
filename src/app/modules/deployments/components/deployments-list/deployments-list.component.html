@@ -37,7 +37,7 @@
                 <mat-cell *matCellDef="let i = index" class="actions-cell">
                     <button mat-button matTooltip="Access" [matMenuTriggerFor]="menuAccess"
                         class="action-button-in-cell" (click)="$event.stopPropagation()">
-                        <mat-icon color="primary">terminal</mat-icon>
+                        <mat-icon color="accent" id="accessIcon">terminal</mat-icon>
                     </button>
                     <mat-menu #menuAccess="matMenu">
                         <button mat-menu-item>
@@ -94,7 +94,7 @@
         </div>
     </mat-card-content>
     <mat-card-actions align="end">
-        <a mat-raised-button aria-label="" color="primary" class="mt-2 mr-2 mb-2"
+        <a mat-raised-button aria-label="" color="accent" class="mt-2 mr-2 mb-2"
             routerLink="/modules/deep-oc-generic-dev/train">
             New deployment
         </a>

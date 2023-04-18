@@ -24,7 +24,7 @@
             <mat-label>JupyterLab Password</mat-label>
             <input [type]="hidePassword ? 'password' : 'text'" matInput placeholder="At least 9 characters"
                 formControlName="jupyterLabPassInput">
-            <mat-icon matSuffix (click)="hidePassword = !hidePassword" color="primary"> {{hidePassword ?
+            <mat-icon matSuffix (click)="hidePassword = !hidePassword" color="accent"> {{hidePassword ?
                 'visibility_off' : 'visibility'}} </mat-icon>
             <mat-error *ngIf="generalConfFormGroup.get('jupyterLabPassInput')?.errors?.['required']">
                 A JupyterLab password is required.

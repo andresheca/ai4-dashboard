@@ -12,7 +12,7 @@
         <app-general-conf-form [defaultFormValues]="generalConfDefaultValues"></app-general-conf-form>
         
         <div class="next-back-buttons">
-          <button type="button" mat-raised-button matStepperNext color="primary">Next</button>
+          <button type="button" mat-raised-button matStepperNext color="accent">Next</button>
         </div>
 
 
@@ -24,7 +24,7 @@
         <app-hardware-conf-form [defaultFormValues]="hardwareConfDefaultValues"></app-hardware-conf-form>
         <div class="next-back-buttons">
           <button mat-raised-button matStepperPrevious >Back</button>
-          <button mat-raised-button matStepperNext color="primary">Next</button>
+          <button mat-raised-button matStepperNext color="accent">Next</button>
         </div>
       </form>
     </mat-step>
@@ -34,7 +34,7 @@
       <app-storage-conf-form [defaultFormValues]="storageConfDefaultValues"></app-storage-conf-form>
       <div class="next-back-buttons">
         <button mat-raised-button matStepperPrevious class="mr-3" >Back</button>
-        <button mat-raised-button color="primary" (click)="submitTrainingRequest()">Submit</button>
+        <button mat-raised-button color="accent" (click)="submitTrainingRequest()">Submit</button>
       </div>
       </form>
     </mat-step>
